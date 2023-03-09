@@ -1,16 +1,10 @@
 package Demoblazetest;
 
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.Test;
+import org.junit.After;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.ITestResult;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.Test;
-
 import genericlib.webdrivercommonlib;
 
 public class demoblaze {
@@ -198,7 +192,7 @@ public void createnewaccouttest() {
          driver.quit();
 
 }
-@AfterSuite
+@After
 public void aftermethod(ITestResult result)
 
 {
